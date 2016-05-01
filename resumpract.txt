@@ -1,0 +1,75 @@
+PRACTICA: Creacio d'un processador de textos.
+
+afegir text "<titol>" 
+autor "<autor>"
+<contingut>
+****
+
+
+triar text {<paraula1> <paraula2> ... <paraulaN>} //permet seleccionar l'unic text que conte les paraules escrites
+
+eliminar text // elimina l'ultim text triat
+
+substitueix "<paraula1>" per "<paraula2>"  //canvia totes les <paraula1> per <paraula2> de l'ultim text triat
+
+
+###  CONSULTA ###
+
+textos autor "<autor>" ? // mostra tots els textos d'un det. autor (nomes titol) ordenats ALFABETICAMENT
+
+tots textos ? // mostra tots textos emmagatzemats, noms titol i autor, ordenats: 1r AUTOR , 2n TITOL ALFABETICAMENT
+
+tots autors ? // mostra tots els autors del sistema. Indica el nombre de textos, total de frases i paraules del 
+              // contingut dels textos. AUTORS ALFABETICAMENT
+
+info ?        // mostra info sobre ultim text triat (autor, titol, nombre frases, nombre paraules i cites associades
+
+autor ?       // mostra autor de l'ultim text triat
+
+contingut ?   // mostre el contingut de l'ultim text triat amb frases numerades a partir de l'1. 
+              // FORMAT :nº_frase <frase> << endl;
+
+frases x y ?  // mostra frases entre x-esima i la y-esima frase del contingut de lultim text triat, extrems inclosos
+
+nombre de frases ?     // mostra el nombre de paraules ultim text seleccionat
+
+taula de frequencies ? //mostra totes les paraules del text ordenades decreixenment per frequencia, 
+                       //si empat --> ordre creixent: 1r llargada, 2n alfabeticament
+
+frases <expressio> ?   // mostra frases de lultim text que compleixin l'expressio booleana
+                       // exemple: frases (({mel mato} | {fruita}) & {restaurant}) ?
+
+frases "<paraula1> <paraula2> ... <paraulaN>" ? // mostra frases on, obiant signes puntuacio, hi apareix la sequencia
+                                                // de paraules entrada
+
+### Cites ###
+
+afegir cita x y          // afageix al sistema una cita basada en les frases que van de la x-esima a la y-esima 
+
+info cita "<referencia>" // mostra info d'una cita (autor, titol ,numero de la frase (ini i fi) i contingut
+
+cites autor "<autor>"    // mostra totes les cites d'un det. autor ( ref, contingut, titol del txt d'on provenen) 
+                         // ORDRE: referencia
+
+cites ?                  // mostra totes les cites de l'ultim text triat
+                         // ORDRE: referencia
+
+totes cites ?            // mostra totes cites del sist.
+
+elminar cita "<referencia>"
+
+### ACABAMENT ###
+
+sortir
+
+### ERRORS ###
+
+si una comanda no respecta els requeriments, el sist. escriura:
+
+error 
+
+
+
+
+
+
