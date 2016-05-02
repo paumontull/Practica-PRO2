@@ -1,3 +1,8 @@
+/** @mainpage Gestor de textos i cites
+	Aquesta és una aplicació que permet manipular textos i cites de diverses maneres.
+
+*/
+
 #include <sstream>
 #include <iostream>
 #include <string>
