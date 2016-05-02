@@ -23,8 +23,10 @@ public:
 	//Constructores
 	
 	Frase();
-	/* Pre: cert */
-	/* Post: el resultat és una frase buida */
+	/** @brief el resultat és una frase buida
+		\pre cert
+		\post el resultat és una frase buida
+	*/
 	
 	//Destructora
 	
@@ -33,35 +35,47 @@ public:
 	//Modificadores
 	
 	void write_iesim(int i, string s) const;
-	/* Pre: cert */
-	/* Post: el valor de frase[i] és s */
+	/** @brief el valor de frase[i] és s 
+		\pre cert 
+		\post el valor de frase[i] és s
+		*/
 	
 	//Consultores
 	
 	bool es_buit();
-	/* Pre: cert */
-	/* Post: retorna cert si el p.i. no conté cap element */
+	/** @brief retirba cert si p.i. no conté cap element
+		\pre cert
+		\post retorna cert si p.i. no conté cap element
+	*/
 	
 	string read_iesim(int i);
-	/* Pre: cert */
-	/* Post: retorna el valor de l'element i-èsim del p.i. */
+	/** @brief retorna el valor de l'element i-èsim dle p.i.
+		\pre cert
+		\post retorna el valor de l'element i-èsim del p.i. 
+	*/
 	
 	int n_paraules();
-	/* Pre: cert */
-	/* Post: retorna el nombre d'elements del p.i. */
+	/** @brief retorna el nombre d'elements del p.i. 
+		\pre cert
+		\post retorna el nombre d'elements del p.i. 
+	*/
 	
 	//Lectura i escriptura
 	
-	void llegir(istringstream iss);
-	/* Pre: el canal estandard d'entrada conté una sola frase no acabada 
-	   en '.', '!' o '?' */
-	/* Post: el p.i. és la frase resultant de separar l'entrada 
-	   en strings */
+	void llegir(istringstream iss)
+	/** @brief el p.i. és la frase resultant de sperar l'entrada en strings
+		\pre el canal estandard d'entrada conté una sola frase no acabada 
+		en '.', '!' o '?'
+		\post el p.i. és la frase resultant de separar l'entrada 
+		en strings 
+	*/
 	
 	void escriure();
-	/* Pre: cert */
-	/* Post: s'escriu al canal estandard de sortida els elements del
-	   p.i. separats per espais i si l'últim és un caràcter de 
-	   puntuació, aquest s'ajunta al penúltim string */
+	/** @brief sescriuen els elements del p.i- seprats per espais
+		\pre cert
+		\post s'escriu al canal estandard de sortida els elements del
+		p.i. separats per espais i si l'últim és un caràcter de 
+		puntuació, aquest s'ajunta al penúltim string 
+	*/
 };
 #endif
