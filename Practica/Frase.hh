@@ -38,6 +38,10 @@ public:
 	
 	//Consultores
 	
+	bool es_buit();
+	/* Pre: cert */
+	/* Post: retorna cert si el p.i. no conté cap element */
+	
 	string read_iesim(int i);
 	/* Pre: cert */
 	/* Post: retorna el valor de l'element i-èsim del p.i. */
