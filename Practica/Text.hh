@@ -25,11 +25,21 @@ public:
 	
 	//Modificadores
 	
+	void afegir_salt(Text& t);
+	/* Pre: cert */
+	/* Post: si el p.i. original era buit ara conté t. Altrament
+	   s'afegeix un caracter salt de linia "/n" i el text t a continuació
+	   del contingut del p.i. original */
+	
 	void write_iesim(int i, const Frase& s) const;
 	/* Pre: cert */
 	/* Post: el valor de frase[i] és s */
 	
 	//Consultores
+	
+	bool es_buit();
+	/* Pre: cert */
+	/* Post: retorna cert si el p.i. no conté cap element */
 	
 	Frase read_iesim(int i);
 	/* Pre: cert */
