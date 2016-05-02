@@ -24,6 +24,19 @@ private:
 	
 public:
 	
+	//Constructores 
+	
+	Cjt_cita();
+	/** @brief 
+		\pre cert
+		\post el resultat és un conjunt d'estudiants buit
+	*/
+	
+	
+	//Destructora
+
+	~Cjt_cita();
+  
 	//Modificadores
 	
 	bool afegir_cita(int x, int y, const Cjt_text& cjt_text);
@@ -37,7 +50,7 @@ public:
 	
 	
 	bool eliminar_cita(string ref);
-	/** @brief
+	/** @brief elimina una cita
 		\pre cert 
 		\post si la referència (ref) existeix, retorna cert i elimina 
 		l'element amb referència = ref. Altrament retorna fals.
@@ -45,13 +58,13 @@ public:
 	
 	//Consultores
 	int n_cites(Frase& autor);
-	/** @brief
+	/** @brief retorna el nombre de cites d'un cert autor
 		\pre cert
 		\post retorna el nombre de cites amb autor = autor
 	*/
 	
 	bool info_cita(string ref);
-	/** @brief
+	/** @brief retorna informació sobre la cita
 		\pre cert
 		\post si la referencia (ref) existeix, retorna cert, altrament
 		retorna fals.
@@ -69,7 +82,7 @@ public:
 	*/
 	 
 	void totes_cites();
-	/** @brief
+	/** @brief retorna ordeandes totes les cites del sistema
 		\pre hi ha alguna cita guardada
 		\post Ordeandes per referència mostra totes les cites 
 		emmagatzemades. Mostra: cita.consultar_contingut(), 
@@ -77,7 +90,7 @@ public:
 	*/ 
 	 
 	void cites(Cjt_text& cjt_text);
-	/** @brief
+	/** @brief retorna les cites associades a l'últim text triat
 		\pre Hi ha un text triat, aquest text triat està associat a una
 		cita
 		\post escriu pel pel canal estàndard de sortida, les cites (i info 
@@ -89,3 +102,4 @@ public:
 	
 	};
 #endif
+
