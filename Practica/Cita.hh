@@ -1,3 +1,7 @@
+/** @file Cita.hh 
+ *  @brief classe cita
+*/
+
 #ifndef CITA_HH
 #define CITA_HH
 
@@ -74,3 +78,4 @@ public:
 };
 
 #endif
+
