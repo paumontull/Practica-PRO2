@@ -1,3 +1,6 @@
+/** @file Cjt_text.hh 
+ *  @brief classe conjunt text
+*/
 #ifndef CONJ_TEXT_HH
 #define CONJ_TEXT_HH
 
