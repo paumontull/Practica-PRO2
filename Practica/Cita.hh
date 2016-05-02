@@ -22,12 +22,16 @@ public:
 	//Constructores
 	
 	Cita();
-	/* Pre: cert */
-	/* Post: el resultat és una cita buida */
+	/** @brief Afegeix una cita buida
+		\pre cert
+		\post el resultat és una cita buida 
+	*/
 	
 	Cita(Frase& autor, Text& titol, Text& contingut, int x, int y);
-	/* Pre: cert */
-	/* Post: */
+	/** @brief Afegeix una cita completa
+		\pre cert
+		\post el resultat és una cita amb tots els paràmetres corresponents
+	*/
 	
 	//Destructora
 	
@@ -38,26 +42,35 @@ public:
 	
 	//Consultores
 	Frase consultar_autor();
-	/* Pre: el p.i. no és buit */
-	/* Post: el resultat és l'autor del p.i. */
-	
+	/** @brief consulta l'autor d'una cita
+		\pre el p.i. no és buit
+		\post el resultat és l'autor del p.i.
+	*/
+		
 	Text consultar_titol();
-	/* Pre: el p.i. no és buit */
-	/* Post: el resultat és el títol del p.i.*/
+	/** @brief consulta el titol del text d'on prové una cita
+		\pre el p.i. no és buit
+		\post el resultat és el títol del p.i.
+	*/
 	
 	Text consultar_contingut();
-	/* Pre: el p.i. no és buit */
-	/* Post: el resultat és el contingut del p.i.*/
+	/** @brief consulta el contingut de la cita
+		\pre el p.i. no és buit
+		\post el resultat és el contingut del p.i.
+	*/
 	
 	int consultar_x();
-	/* Pre: el p.i. no és buit */
-	/* Post: el resutlat és el valor x del p.i.*/
-	
+	/** @brief consulta el valor x de la cita
+		\pre el p.i. no és buit
+		\post el resultat és el valor x del p.i.
+	*/
+
 	int consultar_y();				
-	/* Pre: el p.i. no és buit */
-	/* Post: el contingut és el valor y del p.i.*/
+	/** @brief consulta el valor y de la cita cita
+		\pre el p.i. no és buit
+		\post el resultat és el valor y del p.i.
+	*/
 	
 };
 
 #endif
-
