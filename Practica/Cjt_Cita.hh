@@ -1,3 +1,7 @@
+/** @file Cjt_Cita.hh 
+ *  @brief classe conjunt cita
+*/
+
 #ifndef CONJ_TEXT_HH
 #define CONJ_TEXT_HH
 
