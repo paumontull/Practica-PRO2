@@ -4,6 +4,8 @@
 #include <vector>
 
 typedef vector<string> Frase;
+typedef vector<Frase> Vec_Frase;
+typedef pair<Vec_Frase, Frase> info_text;
 
 class Text{
 
@@ -22,7 +24,7 @@ public:
 	/* Pre: cert */
 	/* Post: el resultat és un text buit */
 	
-	Text(vector<Frase>& titol, Frase& autor, vector<frase>& contingut);
+	Text(vector<Frase>& titol, Frase& autor, vector<Frase>& contingut);
 	/* Pre: el primer string de titol i autor comença amb '"' i l'ultim acaba amb '"' */
 	/* Post: el resultat es un text amb TITOL = titol, AUTOR = autor i CONTINGUT = contingut */
 	

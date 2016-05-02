@@ -1,6 +1,7 @@
 #ifndef CONJ_TEXT_HH
 #define CONJ_TEXT_HH
 
+#include <map>
 #include "Text.hh"
 
 class Cjt_text{
@@ -10,22 +11,25 @@ private:
 	// Tipus de modul: dades
 	// Descripcio del tipus: representa un conjunt de textos
 	
+	map<info_text, 
 	
+	bool buscar_text
 	
 public:
 	//Modificadores
 	
-	void afegir_text(Text& text);
+	bool afegir_text(Text& text);
 	/* Pre:  */
 	/* Post: */
 	
-	void triar_text(Frase& paraules);
+	bool triar_text(Frase& paraules);
 	/* Pre: */
 	/* Post: */
 	
-	void eliminar_text();
+	bool eliminar_text();
 	/* Pre: */
 	/* Post: */
+	
 	
 };
 #endif
