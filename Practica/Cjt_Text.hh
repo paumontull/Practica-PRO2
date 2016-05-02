@@ -87,6 +87,10 @@ public:
 	 
 	//Consultores
 	
+	bool has_selec();
+	/* Pre: cert */
+	/* Post: retorna cert si hi ha un text seleccionat i fals altrament */
+	
 	int selec_n_frases();
 	/** @brief retorna el nombre de frases del valor associat a l'element
 		apuntat per selec_text
