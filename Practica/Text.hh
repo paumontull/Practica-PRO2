@@ -1,3 +1,6 @@
+/** @file Cjt_text.hh 
+ *  @brief classe text
+*/
 #ifndef TEXT_HH
 #define TEXT_HH
 
